@@ -20,4 +20,4 @@ availableSecrets:
    - versionName: projects/personalsdm-216019/secrets/docker-password/versions/1
      env: 'PASSWORD'
    - versionName: projects/personalsdm-216019/secrets/docker-username/versions/1
-     env: 'USERNAME
+     env: 'USERNAME'
