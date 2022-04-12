@@ -14,7 +14,7 @@ steps:
   - 'Dockerfile' 
   - '.'
 - name: 'gcr.io/cloud-builders/docker'
-  args: ["push", "slimlsenderslacks/altdservice:$TAG_NAME"]
+  args: ["push", "slimlslenderslacks/altdservice:$TAG_NAME"]
 availableSecrets:
    secretManager:
    - versionName: projects/personalsdm-216019/secrets/docker-password/versions/1
