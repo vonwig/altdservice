@@ -1,6 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ["login", "--username=$$USERNAME", "--password=$$PASSWORD"]
+  entrypoint: 'bash'
+  args: ["-c", "docker login --username=$$USERNAME --password=$$PASSWORD"]
   secretEnv: ["USERNAME", "PASSWORD"]
 - name: 'gcr.io/cloud-builders/docker'
   args: 
@@ -14,7 +15,6 @@ steps:
   - '.'
 - name: 'gcr.io/cloud-builders/docker'
   args: ["push", "slimlsenderslacks/altdservice:$TAG_NAME"]
-  secretEnv: ["USERNAME", "PASSWORD"]
 availableSecrets:
    secretManager:
    - versionName: projects/personalsdm-216019/secrets/docker-password/versions/1
