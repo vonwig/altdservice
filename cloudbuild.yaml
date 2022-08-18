@@ -17,7 +17,7 @@ steps:
   args: ["push", "vonwig/altdservice:$TAG_NAME"]
 availableSecrets:
    secretManager:
-   - versionName: projects/personalsdm-216019/secrets/docker-password/versions/1
+   - versionName: projects/personalsdm-216019/secrets/docker-password/versions/2
      env: 'PASSWORD'
-   - versionName: projects/personalsdm-216019/secrets/docker-username/versions/1
+   - versionName: projects/personalsdm-216019/secrets/docker-username/versions/3
      env: 'USERNAME'
