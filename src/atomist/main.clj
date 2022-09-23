@@ -5,7 +5,7 @@
 (defn handler [_]
   {:status 200
    :headers {"Content-Type" "text/html"}
-   :body (-> {:version 108}
+   :body (-> {:version 109}
              (str))})
 
 (defn -main [& args]
