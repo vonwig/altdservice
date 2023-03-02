@@ -1,4 +1,4 @@
 vscode:
   extensions:
-    - https://github.com/docker/lsp/releases/download/0.0.2/docker-lsp-linux-x64-0.0.2.vsix
+    - https://storage.googleapis.com/docker-lsp/docker-lsp-linux-x64-0.0.2.vsix
 
